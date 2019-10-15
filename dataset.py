@@ -29,8 +29,9 @@ def parser(folder_path):
 
             y = []
             try:
-                for diag in diag_dict.keys():
-                    y.append(diagnosis[diag])
+                #for diag in diag_dict.keys():
+                    #y.append(diagnosis[diag])
+                y.append(data[id]['IsRegularRhythm'])
             except KeyError:
                 print("\nThe patient " + id + " is not included in the final dataset. Reason: no diagnosis.")
                 continue
